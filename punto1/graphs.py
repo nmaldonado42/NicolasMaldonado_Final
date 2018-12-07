@@ -7,7 +7,7 @@ files = ["dist_0.txt","dist_1.txt","dist_2.txt","dist_3.txt","dist_4.txt","dist_
 data = np.zeros((8,1000))
 
 for i in range(len(files)):
-    f = open(file,"r")
+    f = open(files[i],"r")
     d = f.read().split(",")
     d.pop(-1)
     for j in range(len(d)):
